@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.UsersMapper">
+    <select id="selectAll" resultType="User">
+           select *from users
+    </select>
+    <select id="checkUsername" resultType="String" parameterType="String" flushCache="true"  useCache="false">
+           select username from users where username = #{username} LIMIT 1
+    </select>
+    <select id="checkLogin" resultType="User" flushCache="true" useCache="false">
+           select *from users where username = #{username} LIMIT 1
+    </select>
+    <select id="findAvater" resultType="String">
+           select avater from users where username = #{username} LIMIT 1
+    </select>
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id">
+           insert into users(username,password,avater ) value (#{username},#{password},#{avater})
+    </insert>
+
+    <select id="findFriends" resultType="String" parameterType="String" flushCache="true" useCache="false">
+           select friend_R from friends where friend_L = #{username} and friend_F = 'Y' ;
+    </select>
+    <insert id="insertFriend" parameterType="Friend">
+           insert into friends(friend_L,friend_R, friend_F) value (#{friend_L},#{friend_R},#{friend_F})
+    </insert>
+    <select id="findFriendN" resultType="String">
+           select friend_L from friends where friend_R = #{username} and friend_F = 'N';
+    </select>
+    <update id="updateFriendNToY">
+           update friends set friend_F = 'Y' where friend_L = #{username} and  friend_F = 'N';
+    </update>
+    <delete id="deleteFriend">
+            delete from friends where friend_F = '###'
+    </delete>
+
+</mapper>

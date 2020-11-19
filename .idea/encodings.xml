@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Chats/Emoticon.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Test/Client.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Test/Client2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Test/Client3.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Test/Lists.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Test/Login.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Test/MyFont.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Test/Register.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Test/Server.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Test/Server2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/images/gzh.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/images/login.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/UserMapper.java" charset="GBK" />
+  </component>
+</project>
